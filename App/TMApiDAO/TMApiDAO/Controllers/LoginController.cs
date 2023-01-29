@@ -22,5 +22,21 @@ namespace TMApiDAO.Controllers
             _daoLogin = daoLogin;
             _config = config;
         }
+
+        [HttpPost("Login")]
+        public string Login([FromBody] User loginParams)
+        {
+            string responseToken = "";
+            User response = _daoLogin.AuthenticateUser(loginParams);
+            if (response is not null)
+            {
+                responseToken = "OK";
+            }
+            else
+            {
+                responseToken = "ERROR";
+            }
+            return responseToken;
+        }
     }
 }
