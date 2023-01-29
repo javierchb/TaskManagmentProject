@@ -1,0 +1,5 @@
+### How task managment app must work ###
+A task could have one or more child tasks.
+And a child task could have one or more granchild tasks.
+Tasks could be organized by a group.
+A group of tasks must have a title and descriptions.
