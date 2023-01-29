@@ -127,15 +127,10 @@ inner join tg_task t on (ttc.IdTsk = t.IdTsk)
 where ttc.IdTsk = 1
 and tc.IdChildTsk = 2;
 
-
-select * from tg_task;
-
-
-
 create table tb_task_periodicity(
 	IdTskPeriod INTEGER NOT NULL PRIMARY KEY,
 	TskPeriodValue VARCHAR(25) NOT NULL
-)
+);
 
 insert into tb_task_periodicity(IdTskPeriod, TskPeriodValue) values (1,'1');
 insert into tb_task_periodicity(IdTskPeriod, TskPeriodValue) values (2,'2');

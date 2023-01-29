@@ -13,6 +13,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IConnectionDB, ConnectionDB>();
 // Add DAO.
 builder.Services.AddScoped<IDAOLogin, DAOLogin>();
+builder.Services.AddScoped<IDAOTask, DAOTask>();
 
 var app = builder.Build();
 

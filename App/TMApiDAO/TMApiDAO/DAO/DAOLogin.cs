@@ -9,18 +9,14 @@ namespace TMApiDAO.DAO
     /// </summary>
     public class DAOLogin : IDAOLogin
     {
-        private readonly IConnectionDB _connection;
-        private readonly IConfiguration _config;
-
+        private readonly IConnectionDB _connection;        
         /// <summary>
         /// Constructor DAOLogin.
         /// </summary>
-        /// <param name="connection">Injection dependency IConnectionDB.</param>
-        /// <param name="config">Injection dependency IConfiguration.</param>
-        public DAOLogin(IConnectionDB connection, IConfiguration config)
+        /// <param name="connection">Injection dependency IConnectionDB.</param>        
+        public DAOLogin(IConnectionDB connection)
         {
             _connection = connection;
-            _config = config;
         }
         
         
