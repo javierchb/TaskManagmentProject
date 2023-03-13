@@ -30,6 +30,7 @@ namespace TMApiDAO.Controllers
             User response = _daoLogin.AuthenticateUser(loginParams);
             if (response is not null)
             {
+                responseToken = GenerateToken();
                 responseToken = "OK";
             }
             else
@@ -37,6 +38,16 @@ namespace TMApiDAO.Controllers
                 responseToken = "ERROR";
             }
             return responseToken;
+        }
+
+        /// <summary>
+        /// Generate token.
+        /// </summary>
+        /// <returns></returns>
+        private string GenerateToken()
+        {
+            string token = "";
+            return token;
         }
     }
 }

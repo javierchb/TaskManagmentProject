@@ -1,5 +1,11 @@
 ### How task managment app must work ###
-A task could have one or more child tasks.
-And a child task could have one or more granchild tasks.
-Tasks could be organized by a group.
-A group of tasks must have a title and descriptions.
+> A task could have one or more child tasks.
+> And a child task could have one or more granchild tasks.
+> Tasks could be organized by a group.
+> A group of tasks represents a task flow for an especific work to do,
+like homeworks, personal projects, personal plans. etc.
+> A task must be controlled, using data like periodicity,
+what day to do a work (ex: Monday, Wednesday and Friday i would go to
+the gym), how many day at week, etc. Must define
+start time and end time.
+

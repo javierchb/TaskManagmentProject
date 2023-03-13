@@ -174,7 +174,14 @@ alter table tc_task_grandchild
 add TskPeriodDays VARCHAR(25);
 
 insert into tg_user(IdUsr, Names, Lastname1, Lastname2, Username, Email, Phone, UserPassword)
-values (1, 'Javier Ignacio', 'Aldunate', 'Mengual', 'Javierchb', 'javierig.am@gmai.com', '+569 3393 2697', 'admin123')
+values (1, 'Javier Ignacio', 'Aldunate', 'Mengual', 'Javierchb', 'javierig.am@gmai.com', '+569 3393 2697', 'admin123');
+
+
+select * from tg_task;
+
+select * from tc_task_child;
+
+select * from tc_task_grandchild;
 
 
 
